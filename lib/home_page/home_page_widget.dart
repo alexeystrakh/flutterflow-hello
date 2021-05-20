@@ -21,6 +21,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       appBar: AppBar(
         backgroundColor: FlutterFlowTheme.primaryColor,
         automaticallyImplyLeading: true,
+        title: Text(
+          'Flutter Flow Preview',
+          style: FlutterFlowTheme.bodyText1.override(
+            fontFamily: 'Poppins',
+          ),
+        ),
         actions: [],
         centerTitle: true,
         elevation: 4,
@@ -40,7 +46,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               children: [
                 Expanded(
                   child: Text(
-                    'Hello Flutter Flow',
+                    'Hello \nFlutter Flow \nfrom \nXamarin',
+                    textAlign: TextAlign.center,
                     style: FlutterFlowTheme.bodyText1.override(
                       fontFamily: 'Poppins',
                     ),
